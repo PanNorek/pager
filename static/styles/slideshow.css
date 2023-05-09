@@ -1,0 +1,73 @@
+:root {
+	--imgshadows: #596a7a;
+	--imageClassColor: #484c58;
+	--textColor: #c9c5ce;
+	--hoverLinkColor: #ffffff;
+}
+
+.imagesContainer {
+	display: flex;
+	margin: 10% auto;
+	justify-content: center;
+	color: var(--textColor);
+	width: 80vw;
+	height: 25vw;
+	align-items: center;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.imageClass {
+	background-color: var(--imageClassColor);
+	margin-right: 1%;
+	width: 30%;
+	height: 95%;
+	border-radius: 30px;
+	border: 1px solid var(--hrshadows);
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.imageClass img {
+	width: 92%;
+	height: 70%;
+	margin-top: 3%;
+	box-shadow: var(--imgshadows) 3px 1px 3px;
+	border-radius: 30px;
+	cursor: grabbing;
+	transform-origin: 0 0;
+	transition: transform 0.5s, visibility 0.25s ease-in;
+}
+
+.imageClass img:hover {
+	transform: scale(0.98);
+	box-shadow: var(--imgshadows) 1px 1px 1px;
+}
+
+.imageClass a {
+	color: var(--textColor);
+	margin-top: 7%;
+	margin-bottom: 5%;
+	height: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5vw;
+	width: 80%;
+	text-decoration: none;
+	border-radius: 30px;
+	transform-origin: 0 0;
+	transition: transform 0.5s, visibility 0.25s ease-in;
+	box-shadow: 0 0.6px 2px 0.4px var(--textColor);
+}
+
+.imageClass a:hover {
+	color: var(--hoverLinkColor);
+	transform: scale(1.03);
+	box-shadow: none;
+}
+
+.imagesContainer :nth-child(2) {
+	margin-left: 1%;
+}

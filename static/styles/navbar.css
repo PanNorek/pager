@@ -12,21 +12,6 @@
 	box-sizing: border-box;
 }
 
-@keyframes floatIcon {
-	25% {
-		transform: translateY(3px);
-	}
-	50% {
-		transform: translateY(0px);
-	}
-	75% {
-		transform: translateY(-3px);
-	}
-	100% {
-		transform: translateY(0px);
-	}
-}
-
 @keyframes nameAnimation {
 	from {
 		color: var(--background);
@@ -54,6 +39,7 @@
 	align-items: center;
 	font-family: "Montserrat", sans-seri;
 	font-weight: bold;
+	z-index: 1;
 }
 
 .menu .logo {
@@ -116,38 +102,6 @@
 	min-width: 50px;
 	height: 80%;
 	position: relative;
-}
-
-.dropdown-content {
-	border-bottom-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-	margin-top: 1%;
-	width: 100%;
-	display: none;
-	background-color: var(--background);
-}
-
-.dropdown-content a {
-	border-radius: 50px;
-	font-size: calc(5px + 0.6vw);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: var(--background);
-	color: var(--buttonsBackground);
-	padding: 12px 16px;
-	text-decoration: none;
-	text-shadow: none;
-}
-
-.dropdown-content a:hover {
-	background-color: var(--buttonsBackground);
-	color: var(--background);
-	text-shadow: -0.2px -0.2px 0.2px var(--shadows);
-}
-
-.dropdown:hover .dropdown-content {
-	display: block;
 }
 
 .dropdown:hover .dropbtn {

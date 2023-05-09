@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 /.vscode
+/*.ipynb
 # C extensions
 *.so
 
