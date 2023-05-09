@@ -1,22 +1,58 @@
-.gradient-custom-2 {
-	/* fallback for old browsers */
-	background: #fccb90;
-
-	/* Chrome 10-25, Safari 5.1-6 */
-	background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
-
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+:root {
+	--foreground: #c9c5ce;
+	--hrshadows: #342b09;
+	--textshadow: #ffffff;
+	--bodyBackground: linear-gradient(to right top, #484c58, #434550, #3e3e47, #39373f, #333037);
 }
 
-@media (min-width: 768px) {
-	.gradient-form {
-		height: 100vh !important;
-	}
+.container {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 2.5%;
 }
-@media (min-width: 769px) {
-	.gradient-custom-2 {
-		border-top-right-radius: 0.3rem;
-		border-bottom-right-radius: 0.3rem;
-	}
+
+header {
+	text-shadow: -1px -1px 2px var(--textshadow);
+	width: 100%;
+	margin: auto;
+	z-index: 20;
+}
+
+body {
+	place-items: center;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	background: var(--bodyBackground);
+	color: var(--foreground);
+	cursor: auto;
+	font-family: "Montserrat", sans-seri;
+	text-align: justify;
+}
+
+hr {
+	width: 80%;
+	margin: auto;
+	border: none;
+	height: 0px;
+	box-shadow: 0 1px 3px 1px var(--hrshadows);
+}
+
+p {
+	text-align: justify;
+	font-size: 1.5vw;
+}
+
+h1,
+h2,
+h3 {
+	font-size: 2vw;
+	width: 100%;
+	font-weight: bold;
+	padding: 5% 0% 2% 0%;
+	text-shadow: -0.5px -0.5px 1px var(--textshadow);
 }
