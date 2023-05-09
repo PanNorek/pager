@@ -1,0 +1,76 @@
+{
+	"breadcrumbs.enabled": false,
+	"commit-message-editor.dynamicTemplate": [
+		"{title}",
+		"",
+		"{body}",
+		"",
+		"{breaking_change}",
+		"",
+		"{issue}"
+	],
+	"commit-message-editor.staticTemplate": [
+		"{title: Short summary of changes. UNDER 50 characters}",
+		"",
+		"{body: Description of changes made: problem, task, reason for commit.}",
+		"",
+		"{breaking_change: true / false}",
+		"",
+		"{issue: Optional issue, must follow 'Issue #{issue_number}' pattern.}"
+	],
+	"commit-message-editor.tokens": [
+		{
+			"description": "Short summary of changes. Should be under 50 characters",
+			"label": "Title",
+			"name": "title",
+			"type": "text"
+		},
+		{
+			"description": "Description of changes made: problem, task, reason for commit",
+			"label": "Body",
+			"lines": 5,
+			"maxLines": 10,
+			"multiline": true,
+			"name": "body",
+			"type": "text"
+		},
+		{
+			"default": false,
+			"label": "Breaking change",
+			"name": "breaking_change",
+			"type": "boolean",
+			"value": "BREAKING CHANGE: "
+		},
+		{
+			"description": "Optional issue, must follow '#{issue_number}' pattern.",
+			"label": "Issue",
+			"maxLength": 5,
+			"name": "issue",
+			"prefix": "#",
+			"type": "text"
+		}
+	],
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": true
+	},
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"files.exclude": {
+		"**/__pycache__": true,
+		"**/.pytest_cache": true
+	},
+	"python.analysis.typeCheckingMode": "basic",
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.black-formatter",
+		"editor.formatOnSave": true
+	},
+	"python.linting.enabled": true,
+	"python.linting.flake8CategorySeverity.E": "Error",
+	"python.linting.flake8CategorySeverity.F": "Warning",
+	"python.linting.flake8CategorySeverity.W": "Warning",
+	"python.linting.flake8Enabled": true,
+	"python.testing.autoTestDiscoverOnSaveEnabled": true,
+	"python.testing.pytestEnabled": true,
+	"python.testing.unittestEnabled": false
+}

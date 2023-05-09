@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CAD_PROJECT"
+authors = [
+  { name = "Rafal Nojek"},
+  { name = "Wojciech Seweryn"},
+]
+description = "An example of use of Google Analitics for WWW page"
+readme = "README.md"
+requires-python = ">=3.8"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
