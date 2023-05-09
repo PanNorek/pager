@@ -3,23 +3,20 @@
 # pip install pre-commit
 # run pre-commit install in repo
 
-
 repos:
-  -   repo: https://github.com/pre-commit/pre-commit-hooks
-      rev: v4.4.0
-      hooks:
-      -   id: trailing-whitespace
-      -   id: end-of-file-fixer
-      -   id: no-commit-to-branch
-          args: [--branch, main]
-      -   id: check-yaml
-      -   id: check-docstring-first
-      -   id: check-merge-conflict
-      -   id: check-added-large-files
-          args: ["--maxkb=1000"]
-      -   id: check-ast
-      -   id: debug-statements
-      -   id: requirements-txt-fixer
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-docstring-first
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: ["--maxkb=1000"]
+      - id: check-ast
+      - id: debug-statements
+      - id: requirements-txt-fixer
 
   - repo: https://github.com/psf/black
     rev: 23.1.0
@@ -31,6 +28,6 @@ repos:
   - repo: https://github.com/PyCQA/flake8
     rev: 6.0.0
     hooks:
-    -   id: flake8
+      - id: flake8
         args: [--config, setup.cfg]
         language_version: python3
