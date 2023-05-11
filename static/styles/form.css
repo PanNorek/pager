@@ -5,8 +5,8 @@ form {
 	justify-content: center;
 	width: 40vw;
 	height: 50vh;
-	margin: 0 auto;
-	margin-bottom: 10%;
+	margin: auto;
+	margin-bottom: 4%;
 }
 
 label {
@@ -30,7 +30,7 @@ input[type="submit"] {
 	background-color: #4caf50;
 	color: white;
 	padding: 0.5rem;
-	border-radius: 0.5rem;
+	border-radius: 50px;
 	width: 40%;
 	border: none;
 	cursor: pointer;

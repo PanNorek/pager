@@ -1,0 +1,30 @@
+#lead {
+	width: 50%;
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	line-height: 1.7em;
+	font-size: 28px;
+	font-weight: bold;
+	color: var(--foreground);
+	text-align: justify;
+	padding: 5% 0% 2% 0%;
+}
+
+.see_more {
+	display: flex;
+	margin: 2% auto;
+	padding: 18px 30px;
+	border-radius: 50px;
+	background-color: #4caf50;
+	color: rgb(8, 7, 7);
+	text-decoration: none;
+	font-size: 16px;
+	width: 10%;
+	justify-content: center;
+	align-items: center;
+}
+
+.see_more:hover {
+	background-color: #3e8e41;
+}
