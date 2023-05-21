@@ -17,6 +17,7 @@ label {
 
 input[type="text"],
 input[type="tel"],
+input[type="content"],
 textarea {
 	padding: 0.5rem;
 	border-radius: 0.5rem;

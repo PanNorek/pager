@@ -1,4 +1,3 @@
-from dotenv import load_dotenv
 from flask import (
     Flask,
     abort,
@@ -9,9 +8,6 @@ from flask import (
     request,
     url_for,
 )
-
-load_dotenv()
-
 
 app = Flask(__name__)
 
